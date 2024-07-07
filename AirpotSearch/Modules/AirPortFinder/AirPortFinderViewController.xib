@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AirPortFinderViewController" customModule="AirpotSearch" customModuleProvider="target">
+            <connections>
+                <outlet property="activity" destination="whO-Dq-iVp" id="6Ma-mZ-Lre"/>
+                <outlet property="btnStartSearch" destination="LRe-hx-GVQ" id="agg-Ln-Qi2"/>
+                <outlet property="lblCount" destination="fh6-Q8-QAV" id="Usg-7A-LBn"/>
+                <outlet property="lblSubtitle" destination="PAd-3J-WXp" id="HFZ-Kn-N8a"/>
+                <outlet property="lblTitle" destination="7TB-2w-0nA" id="MHx-Kt-EGv"/>
+                <outlet property="sliderBar" destination="YkZ-fg-xJ1" id="XkC-40-zU3"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewContainerVideo" destination="Cag-hW-3Uf" id="ZQd-he-PFj"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cag-hW-3Uf">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LRe-hx-GVQ">
+                    <rect key="frame" x="120" y="646" width="153" height="50"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="qnD-xe-14A"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="tinted" title="SEARCH">
+                        <fontDescription key="titleFontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="25"/>
+                        <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="searchButtonTapped:" destination="-1" eventType="touchUpInside" id="FSY-ih-u60"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AIRPORT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7TB-2w-0nA">
+                    <rect key="frame" x="10" y="79" width="373" height="55.666666666666657"/>
+                    <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="50"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FINDER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PAd-3J-WXp">
+                    <rect key="frame" x="10" y="139.66666666666666" width="373" height="27"/>
+                    <fontDescription key="fontDescription" name="TimesNewRomanPS-ItalicMT" family="Times New Roman" pointSize="24"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minValue="10" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="YkZ-fg-xJ1">
+                    <rect key="frame" x="42" y="416" width="309" height="31"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <action selector="sliderValueChange:" destination="-1" eventType="valueChanged" id="3Wn-gu-vxR"/>
+                    </connections>
+                </slider>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fh6-Q8-QAV">
+                    <rect key="frame" x="10" y="346.66666666666669" width="373" height="44.333333333333314"/>
+                    <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="40"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="whO-Dq-iVp">
+                    <rect key="frame" x="178" y="407.66666666666669" width="37" height="37"/>
+                </activityIndicatorView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="7TB-2w-0nA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="5rB-Nd-IQM"/>
+                <constraint firstItem="YkZ-fg-xJ1" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="44" id="8bl-b0-JTg"/>
+                <constraint firstItem="Cag-hW-3Uf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="8sS-C5-fB5"/>
+                <constraint firstItem="fh6-Q8-QAV" firstAttribute="top" secondItem="PAd-3J-WXp" secondAttribute="bottom" constant="180" id="AuU-cO-mtp"/>
+                <constraint firstItem="whO-Dq-iVp" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="DGR-pp-MF0"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="fh6-Q8-QAV" secondAttribute="trailing" constant="10" id="EOD-vy-9Mj"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="PAd-3J-WXp" secondAttribute="trailing" constant="10" id="EPa-bp-ZJF"/>
+                <constraint firstItem="LRe-hx-GVQ" firstAttribute="top" secondItem="YkZ-fg-xJ1" secondAttribute="bottom" constant="200" id="Rqa-vP-MKX"/>
+                <constraint firstItem="Cag-hW-3Uf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="TQf-wX-DLi"/>
+                <constraint firstItem="Cag-hW-3Uf" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="UJ7-Rm-hb8"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="LRe-hx-GVQ" secondAttribute="trailing" constant="120" id="UMu-16-1Yx"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7TB-2w-0nA" secondAttribute="trailing" constant="10" id="YPz-tN-yZ2"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="YkZ-fg-xJ1" secondAttribute="trailing" constant="44" id="ZGc-L3-kzo"/>
+                <constraint firstItem="YkZ-fg-xJ1" firstAttribute="top" secondItem="fh6-Q8-QAV" secondAttribute="bottom" constant="25" id="bpa-dM-M3m"/>
+                <constraint firstItem="whO-Dq-iVp" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ggT-en-7qT"/>
+                <constraint firstItem="LRe-hx-GVQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="120" id="ij7-aa-tIi"/>
+                <constraint firstAttribute="bottom" secondItem="Cag-hW-3Uf" secondAttribute="bottom" id="irC-XD-khi"/>
+                <constraint firstItem="7TB-2w-0nA" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="oUl-aB-EW6"/>
+                <constraint firstItem="PAd-3J-WXp" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="rnS-js-Sig"/>
+                <constraint firstItem="fh6-Q8-QAV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="soB-6T-IDc"/>
+                <constraint firstItem="PAd-3J-WXp" firstAttribute="top" secondItem="7TB-2w-0nA" secondAttribute="bottom" constant="5" id="szK-4s-wcy"/>
+            </constraints>
+            <point key="canvasLocation" x="119.84732824427481" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,556 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2653B4CE2C39C5AC00A8A6F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2653B4CD2C39C5AC00A8A6F4 /* AppDelegate.swift */; };
+		2653B4D02C39C5AC00A8A6F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2653B4CF2C39C5AC00A8A6F4 /* SceneDelegate.swift */; };
+		2653B4D72C39C5AC00A8A6F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2653B4D62C39C5AC00A8A6F4 /* Assets.xcassets */; };
+		2653B4DA2C39C5AC00A8A6F4 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 2653B4D92C39C5AC00A8A6F4 /* Base */; };
+		2653B4E72C39CD7300A8A6F4 /* AirPortFinderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2653B4E52C39CD7300A8A6F4 /* AirPortFinderViewController.swift */; };
+		2653B4E82C39CD7300A8A6F4 /* AirPortFinderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2653B4E62C39CD7300A8A6F4 /* AirPortFinderViewController.xib */; };
+		2653B4EA2C39D21D00A8A6F4 /* AirPortFinderRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2653B4E92C39D21D00A8A6F4 /* AirPortFinderRouter.swift */; };
+		2653B4EC2C39D25000A8A6F4 /* AirPortFinderProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2653B4EB2C39D25000A8A6F4 /* AirPortFinderProtocols.swift */; };
+		2653B4EE2C39D27400A8A6F4 /* AirPortFinderInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2653B4ED2C39D27400A8A6F4 /* AirPortFinderInteractor.swift */; };
+		2653B4F02C39D29500A8A6F4 /* AirPortFinderEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2653B4EF2C39D29500A8A6F4 /* AirPortFinderEntity.swift */; };
+		2653B4F22C39D5F400A8A6F4 /* AirPortFinderPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2653B4F12C39D5F400A8A6F4 /* AirPortFinderPresenter.swift */; };
+		2653B4F52C39EA8C00A8A6F4 /* AirPortMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2653B4F32C39EA8C00A8A6F4 /* AirPortMapViewController.swift */; };
+		2653B4F62C39EA8C00A8A6F4 /* AirPortMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2653B4F42C39EA8C00A8A6F4 /* AirPortMapViewController.xib */; };
+		2653B4F82C39EB4400A8A6F4 /* AirPortMapProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2653B4F72C39EB4400A8A6F4 /* AirPortMapProtocols.swift */; };
+		2653B4FA2C39EB5E00A8A6F4 /* AirPortMapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2653B4F92C39EB5E00A8A6F4 /* AirPortMapPresenter.swift */; };
+		2653B4FC2C39EB8900A8A6F4 /* AirPortMapEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2653B4FB2C39EB8900A8A6F4 /* AirPortMapEntity.swift */; };
+		2653B4FE2C39EB9C00A8A6F4 /* AirPortMapRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2653B4FD2C39EB9C00A8A6F4 /* AirPortMapRouter.swift */; };
+		2653B5002C39EBB400A8A6F4 /* AirPortMapInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2653B4FF2C39EBB400A8A6F4 /* AirPortMapInteractor.swift */; };
+		2653B5042C39FDF900A8A6F4 /* AirPortTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2653B5022C39FDF900A8A6F4 /* AirPortTableViewController.swift */; };
+		2653B5052C39FDF900A8A6F4 /* AirPortTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2653B5032C39FDF900A8A6F4 /* AirPortTableViewController.xib */; };
+		2653B5072C39FE2200A8A6F4 /* AirPortTableInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2653B5062C39FE2200A8A6F4 /* AirPortTableInteractor.swift */; };
+		2653B5092C39FE4500A8A6F4 /* AirPortTablePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2653B5082C39FE4500A8A6F4 /* AirPortTablePresenter.swift */; };
+		2653B50B2C39FE5A00A8A6F4 /* AirPortTableProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2653B50A2C39FE5A00A8A6F4 /* AirPortTableProtocols.swift */; };
+		2653B50D2C39FE6A00A8A6F4 /* AirPortTableEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2653B50C2C39FE6A00A8A6F4 /* AirPortTableEntity.swift */; };
+		2653B50F2C39FE8600A8A6F4 /* AirPortTableRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2653B50E2C39FE8600A8A6F4 /* AirPortTableRouter.swift */; };
+		2653B5122C3A1EC800A8A6F4 /* AirPortTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2653B5102C3A1EC800A8A6F4 /* AirPortTableViewCell.swift */; };
+		2653B5132C3A1EC800A8A6F4 /* AirPortTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2653B5112C3A1EC800A8A6F4 /* AirPortTableViewCell.xib */; };
+		2653B5192C3A2E9900A8A6F4 /* AirPortTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2653B5182C3A2E9900A8A6F4 /* AirPortTabBar.swift */; };
+		2653B51B2C3A3D6D00A8A6F4 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2653B51A2C3A3D6D00A8A6F4 /* LocationManager.swift */; };
+		2653B5202C3A7D8C00A8A6F4 /* Intro.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2653B51F2C3A7D8C00A8A6F4 /* Intro.mp4 */; };
+		2653B5232C3B503700A8A6F4 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2653B5222C3B503700A8A6F4 /* Alerts.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2653B4CA2C39C5AC00A8A6F4 /* AirpotSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirpotSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2653B4CD2C39C5AC00A8A6F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2653B4CF2C39C5AC00A8A6F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2653B4D62C39C5AC00A8A6F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2653B4D92C39C5AC00A8A6F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2653B4DB2C39C5AC00A8A6F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2653B4E52C39CD7300A8A6F4 /* AirPortFinderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirPortFinderViewController.swift; sourceTree = "<group>"; };
+		2653B4E62C39CD7300A8A6F4 /* AirPortFinderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AirPortFinderViewController.xib; sourceTree = "<group>"; };
+		2653B4E92C39D21D00A8A6F4 /* AirPortFinderRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirPortFinderRouter.swift; sourceTree = "<group>"; };
+		2653B4EB2C39D25000A8A6F4 /* AirPortFinderProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirPortFinderProtocols.swift; sourceTree = "<group>"; };
+		2653B4ED2C39D27400A8A6F4 /* AirPortFinderInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirPortFinderInteractor.swift; sourceTree = "<group>"; };
+		2653B4EF2C39D29500A8A6F4 /* AirPortFinderEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirPortFinderEntity.swift; sourceTree = "<group>"; };
+		2653B4F12C39D5F400A8A6F4 /* AirPortFinderPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirPortFinderPresenter.swift; sourceTree = "<group>"; };
+		2653B4F32C39EA8C00A8A6F4 /* AirPortMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirPortMapViewController.swift; sourceTree = "<group>"; };
+		2653B4F42C39EA8C00A8A6F4 /* AirPortMapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AirPortMapViewController.xib; sourceTree = "<group>"; };
+		2653B4F72C39EB4400A8A6F4 /* AirPortMapProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirPortMapProtocols.swift; sourceTree = "<group>"; };
+		2653B4F92C39EB5E00A8A6F4 /* AirPortMapPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirPortMapPresenter.swift; sourceTree = "<group>"; };
+		2653B4FB2C39EB8900A8A6F4 /* AirPortMapEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirPortMapEntity.swift; sourceTree = "<group>"; };
+		2653B4FD2C39EB9C00A8A6F4 /* AirPortMapRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirPortMapRouter.swift; sourceTree = "<group>"; };
+		2653B4FF2C39EBB400A8A6F4 /* AirPortMapInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirPortMapInteractor.swift; sourceTree = "<group>"; };
+		2653B5022C39FDF900A8A6F4 /* AirPortTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirPortTableViewController.swift; sourceTree = "<group>"; };
+		2653B5032C39FDF900A8A6F4 /* AirPortTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AirPortTableViewController.xib; sourceTree = "<group>"; };
+		2653B5062C39FE2200A8A6F4 /* AirPortTableInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirPortTableInteractor.swift; sourceTree = "<group>"; };
+		2653B5082C39FE4500A8A6F4 /* AirPortTablePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirPortTablePresenter.swift; sourceTree = "<group>"; };
+		2653B50A2C39FE5A00A8A6F4 /* AirPortTableProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirPortTableProtocols.swift; sourceTree = "<group>"; };
+		2653B50C2C39FE6A00A8A6F4 /* AirPortTableEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirPortTableEntity.swift; sourceTree = "<group>"; };
+		2653B50E2C39FE8600A8A6F4 /* AirPortTableRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirPortTableRouter.swift; sourceTree = "<group>"; };
+		2653B5102C3A1EC800A8A6F4 /* AirPortTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirPortTableViewCell.swift; sourceTree = "<group>"; };
+		2653B5112C3A1EC800A8A6F4 /* AirPortTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AirPortTableViewCell.xib; sourceTree = "<group>"; };
+		2653B5182C3A2E9900A8A6F4 /* AirPortTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirPortTabBar.swift; sourceTree = "<group>"; };
+		2653B51A2C3A3D6D00A8A6F4 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		2653B51F2C3A7D8C00A8A6F4 /* Intro.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Intro.mp4; sourceTree = "<group>"; };
+		2653B5222C3B503700A8A6F4 /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2653B4C72C39C5AC00A8A6F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2653B4C12C39C5AC00A8A6F4 = {
+			isa = PBXGroup;
+			children = (
+				2653B4CC2C39C5AC00A8A6F4 /* AirpotSearch */,
+				2653B4CB2C39C5AC00A8A6F4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2653B4CB2C39C5AC00A8A6F4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2653B4CA2C39C5AC00A8A6F4 /* AirpotSearch.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2653B4CC2C39C5AC00A8A6F4 /* AirpotSearch */ = {
+			isa = PBXGroup;
+			children = (
+				2653B51E2C3A7A7D00A8A6F4 /* Resources */,
+				2653B5142C3A1EE800A8A6F4 /* Assets */,
+				2653B4E12C39C87800A8A6F4 /* Modules */,
+				2653B4CF2C39C5AC00A8A6F4 /* SceneDelegate.swift */,
+				2653B4CD2C39C5AC00A8A6F4 /* AppDelegate.swift */,
+				2653B4D82C39C5AC00A8A6F4 /* LaunchScreen.storyboard */,
+				2653B4DB2C39C5AC00A8A6F4 /* Info.plist */,
+			);
+			path = AirpotSearch;
+			sourceTree = "<group>";
+		};
+		2653B4E12C39C87800A8A6F4 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				2653B5212C3B502400A8A6F4 /* Commons */,
+				2653B4E22C39C8D000A8A6F4 /* AirPortFinder */,
+				2653B4E32C39CA1700A8A6F4 /* AirPortMap */,
+				2653B4E42C39CA4000A8A6F4 /* AirPortTable */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		2653B4E22C39C8D000A8A6F4 /* AirPortFinder */ = {
+			isa = PBXGroup;
+			children = (
+				2653B4E52C39CD7300A8A6F4 /* AirPortFinderViewController.swift */,
+				2653B4E62C39CD7300A8A6F4 /* AirPortFinderViewController.xib */,
+				2653B4ED2C39D27400A8A6F4 /* AirPortFinderInteractor.swift */,
+				2653B4F12C39D5F400A8A6F4 /* AirPortFinderPresenter.swift */,
+				2653B4EB2C39D25000A8A6F4 /* AirPortFinderProtocols.swift */,
+				2653B4EF2C39D29500A8A6F4 /* AirPortFinderEntity.swift */,
+				2653B4E92C39D21D00A8A6F4 /* AirPortFinderRouter.swift */,
+			);
+			path = AirPortFinder;
+			sourceTree = "<group>";
+		};
+		2653B4E32C39CA1700A8A6F4 /* AirPortMap */ = {
+			isa = PBXGroup;
+			children = (
+				2653B4F32C39EA8C00A8A6F4 /* AirPortMapViewController.swift */,
+				2653B4F42C39EA8C00A8A6F4 /* AirPortMapViewController.xib */,
+				2653B4FF2C39EBB400A8A6F4 /* AirPortMapInteractor.swift */,
+				2653B4F92C39EB5E00A8A6F4 /* AirPortMapPresenter.swift */,
+				2653B4F72C39EB4400A8A6F4 /* AirPortMapProtocols.swift */,
+				2653B4FB2C39EB8900A8A6F4 /* AirPortMapEntity.swift */,
+				2653B4FD2C39EB9C00A8A6F4 /* AirPortMapRouter.swift */,
+			);
+			path = AirPortMap;
+			sourceTree = "<group>";
+		};
+		2653B4E42C39CA4000A8A6F4 /* AirPortTable */ = {
+			isa = PBXGroup;
+			children = (
+				2653B5012C39FD9400A8A6F4 /* AirPortCell */,
+				2653B5022C39FDF900A8A6F4 /* AirPortTableViewController.swift */,
+				2653B5032C39FDF900A8A6F4 /* AirPortTableViewController.xib */,
+				2653B5062C39FE2200A8A6F4 /* AirPortTableInteractor.swift */,
+				2653B5082C39FE4500A8A6F4 /* AirPortTablePresenter.swift */,
+				2653B50A2C39FE5A00A8A6F4 /* AirPortTableProtocols.swift */,
+				2653B50C2C39FE6A00A8A6F4 /* AirPortTableEntity.swift */,
+				2653B50E2C39FE8600A8A6F4 /* AirPortTableRouter.swift */,
+			);
+			path = AirPortTable;
+			sourceTree = "<group>";
+		};
+		2653B5012C39FD9400A8A6F4 /* AirPortCell */ = {
+			isa = PBXGroup;
+			children = (
+				2653B5102C3A1EC800A8A6F4 /* AirPortTableViewCell.swift */,
+				2653B5112C3A1EC800A8A6F4 /* AirPortTableViewCell.xib */,
+			);
+			path = AirPortCell;
+			sourceTree = "<group>";
+		};
+		2653B5142C3A1EE800A8A6F4 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				2653B4D62C39C5AC00A8A6F4 /* Assets.xcassets */,
+				2653B5152C3A1F0900A8A6F4 /* Videos */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		2653B5152C3A1F0900A8A6F4 /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				2653B51F2C3A7D8C00A8A6F4 /* Intro.mp4 */,
+			);
+			path = Videos;
+			sourceTree = "<group>";
+		};
+		2653B51C2C3A7A6500A8A6F4 /* TabBarManager */ = {
+			isa = PBXGroup;
+			children = (
+				2653B5182C3A2E9900A8A6F4 /* AirPortTabBar.swift */,
+			);
+			path = TabBarManager;
+			sourceTree = "<group>";
+		};
+		2653B51D2C3A7A7200A8A6F4 /* LocationManager */ = {
+			isa = PBXGroup;
+			children = (
+				2653B51A2C3A3D6D00A8A6F4 /* LocationManager.swift */,
+			);
+			path = LocationManager;
+			sourceTree = "<group>";
+		};
+		2653B51E2C3A7A7D00A8A6F4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2653B51D2C3A7A7200A8A6F4 /* LocationManager */,
+				2653B51C2C3A7A6500A8A6F4 /* TabBarManager */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2653B5212C3B502400A8A6F4 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				2653B5222C3B503700A8A6F4 /* Alerts.swift */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2653B4C92C39C5AC00A8A6F4 /* AirpotSearch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2653B4DE2C39C5AC00A8A6F4 /* Build configuration list for PBXNativeTarget "AirpotSearch" */;
+			buildPhases = (
+				2653B4C62C39C5AC00A8A6F4 /* Sources */,
+				2653B4C72C39C5AC00A8A6F4 /* Frameworks */,
+				2653B4C82C39C5AC00A8A6F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AirpotSearch;
+			productName = AirpotSearch;
+			productReference = 2653B4CA2C39C5AC00A8A6F4 /* AirpotSearch.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2653B4C22C39C5AC00A8A6F4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					2653B4C92C39C5AC00A8A6F4 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 2653B4C52C39C5AC00A8A6F4 /* Build configuration list for PBXProject "AirpotSearch" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2653B4C12C39C5AC00A8A6F4;
+			productRefGroup = 2653B4CB2C39C5AC00A8A6F4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2653B4C92C39C5AC00A8A6F4 /* AirpotSearch */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2653B4C82C39C5AC00A8A6F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2653B4E82C39CD7300A8A6F4 /* AirPortFinderViewController.xib in Resources */,
+				2653B4D72C39C5AC00A8A6F4 /* Assets.xcassets in Resources */,
+				2653B5202C3A7D8C00A8A6F4 /* Intro.mp4 in Resources */,
+				2653B4DA2C39C5AC00A8A6F4 /* Base in Resources */,
+				2653B5052C39FDF900A8A6F4 /* AirPortTableViewController.xib in Resources */,
+				2653B4F62C39EA8C00A8A6F4 /* AirPortMapViewController.xib in Resources */,
+				2653B5132C3A1EC800A8A6F4 /* AirPortTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2653B4C62C39C5AC00A8A6F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2653B4E72C39CD7300A8A6F4 /* AirPortFinderViewController.swift in Sources */,
+				2653B5042C39FDF900A8A6F4 /* AirPortTableViewController.swift in Sources */,
+				2653B4F52C39EA8C00A8A6F4 /* AirPortMapViewController.swift in Sources */,
+				2653B4F22C39D5F400A8A6F4 /* AirPortFinderPresenter.swift in Sources */,
+				2653B5002C39EBB400A8A6F4 /* AirPortMapInteractor.swift in Sources */,
+				2653B4EC2C39D25000A8A6F4 /* AirPortFinderProtocols.swift in Sources */,
+				2653B50B2C39FE5A00A8A6F4 /* AirPortTableProtocols.swift in Sources */,
+				2653B51B2C3A3D6D00A8A6F4 /* LocationManager.swift in Sources */,
+				2653B4F02C39D29500A8A6F4 /* AirPortFinderEntity.swift in Sources */,
+				2653B4FC2C39EB8900A8A6F4 /* AirPortMapEntity.swift in Sources */,
+				2653B5232C3B503700A8A6F4 /* Alerts.swift in Sources */,
+				2653B4EA2C39D21D00A8A6F4 /* AirPortFinderRouter.swift in Sources */,
+				2653B4F82C39EB4400A8A6F4 /* AirPortMapProtocols.swift in Sources */,
+				2653B4EE2C39D27400A8A6F4 /* AirPortFinderInteractor.swift in Sources */,
+				2653B5072C39FE2200A8A6F4 /* AirPortTableInteractor.swift in Sources */,
+				2653B5192C3A2E9900A8A6F4 /* AirPortTabBar.swift in Sources */,
+				2653B4CE2C39C5AC00A8A6F4 /* AppDelegate.swift in Sources */,
+				2653B4FA2C39EB5E00A8A6F4 /* AirPortMapPresenter.swift in Sources */,
+				2653B4D02C39C5AC00A8A6F4 /* SceneDelegate.swift in Sources */,
+				2653B5092C39FE4500A8A6F4 /* AirPortTablePresenter.swift in Sources */,
+				2653B50F2C39FE8600A8A6F4 /* AirPortTableRouter.swift in Sources */,
+				2653B50D2C39FE6A00A8A6F4 /* AirPortTableEntity.swift in Sources */,
+				2653B5122C3A1EC800A8A6F4 /* AirPortTableViewCell.swift in Sources */,
+				2653B4FE2C39EB9C00A8A6F4 /* AirPortMapRouter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2653B4D82C39C5AC00A8A6F4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2653B4D92C39C5AC00A8A6F4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2653B4DC2C39C5AC00A8A6F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2653B4DD2C39C5AC00A8A6F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2653B4DF2C39C5AC00A8A6F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9J75G3S433;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AirpotSearch/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = IntercamPrueba.AirpotSearch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		2653B4E02C39C5AC00A8A6F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9J75G3S433;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AirpotSearch/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = IntercamPrueba.AirpotSearch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2653B4C52C39C5AC00A8A6F4 /* Build configuration list for PBXProject "AirpotSearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2653B4DC2C39C5AC00A8A6F4 /* Debug */,
+				2653B4DD2C39C5AC00A8A6F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2653B4DE2C39C5AC00A8A6F4 /* Build configuration list for PBXNativeTarget "AirpotSearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2653B4DF2C39C5AC00A8A6F4 /* Debug */,
+				2653B4E02C39C5AC00A8A6F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2653B4C22C39C5AC00A8A6F4 /* Project object */;
+}
